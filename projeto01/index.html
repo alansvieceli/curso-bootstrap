@@ -92,9 +92,9 @@
   </nav>
 
   <main role="main" class="col-10 ml-auto">
-    
+
     <!--Titulo e Menu Dropdown -->
-    <div class="d-flex justify-content-between align-items-center mt-4 border-bottom pb-2">
+    <div class="d-flex justify-content-between align-items-center mt-4 border-bottom pb-2 mb-3">
       <h1 class=h2>Dashboard</h1>
       <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
         <div class="btn-group mr-2" role="group" aria-label="First group">
@@ -115,39 +115,74 @@
       </div>
     </div>
 
-    <div class="">
-
-      <div class="">
-        <div class="">
-          <div class="">
-            <div class="">
-              New Comments
+    <!-- Cards e Abas -->
+    <section class="row">
+      <!-- Card -->
+      <div class="col-3">
+        <div class="card text-center" style="max-width: 18rem;">
+          <div class="card-header">New Comments</div>
+          <div class="card-body">
+            <h5 class="card-title">103</h5>
+            <a href="#" class="">See +</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card e Abas -->
+      <div class="col-9">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="lastNews-tab" data-toggle="tab" href="#lastNews" role="tab"
+              aria-controls="lastNews" aria-selected="true">Last News <span class="badge badge-pill badge-primary">3</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="suport-tab" data-toggle="tab" href="#suport" role="tab" aria-controls="suport"
+              aria-selected="false">Suport</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="lastNews" role="tabpanel" aria-labelledby="lastNews-tab">
+            <div class="d-flex justify-content-between">
+              <div class="list-group w-100">
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start w-100">
+                  <div class="d-flex w-100 justify-content-between">
+                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus
+                      varius
+                      blandit.</p>
+                    <small>3 days ago</small>
+                  </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start w-100">
+                  <div class="d-flex w-100 justify-content-between">
+                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus
+                      varius
+                      blandit.</p>
+                    <small class="text-muted">3 days ago</small>
+                  </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start w-100">
+                  <div class="d-flex w-100 justify-content-between">
+                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus
+                      varius
+                      blandit.</p>
+                    <small class="text-muted">3 days ago</small>
+                  </div>
+                </a>
+              </div>
             </div>
-            <div class="">
-              <h5 class="">103</h5>
-
-              <a href="#" class="">See +</a>
+          </div>
+          <div class="tab-pane fade" id="suport" role="tabpanel" aria-labelledby="suport-tab">
+            <div class="d-flex flex-column justify-content-between">
+              <h4 class="pt-2">Get in touch</h4>
+              <p>Teste</p>
+              <hr>
+              alan@teste.com.br
+              <br>
+              3387-1355
             </div>
           </div>
         </div>
-        <div class="">
-
-          <ul class="" id="">
-            <li class="">
-              <a class="" id="" href="#">Last News 3</a>
-            </li>
-            <li class="">
-              <a class="" id="" href="#">Support</a>
-            </li>
-
-          </ul>
-          <!-- aqui entra o conteudo das abas -->
-
-        </div>
-
-
       </div>
-    </div>
+    </section>
 
     <h2>Last Users</h2>
     <div class="">
