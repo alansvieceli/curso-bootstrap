@@ -19,93 +19,97 @@
 
 <body>
 
+  <!--NavBar -->
   <header class="navbar navbar-dark bg-dark p-0 flex-nowrap fixed-top">
     <a class="navbar-brand col-2 mr-0 text-center" href="#">Company Name</a>
-    <input class="form-control form-control-dark" type="text" placeholder="Search" aria-label="Search" >
+    <input class="form-control form-control-dark" type="text" placeholder="Search" aria-label="Search">
     <div class="navbar-nav px-3">
       <a class="nav-item nav-link py-0 text-nowrap" href="#">Sign out</a>
     </div>
   </header>
 
+  <!--SideBar -->
   <nav class="col-2 bg-light sidebar">
-      <ul class="nav flex-column">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">            
-            Dashboard
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">
-            Orders
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            Products
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            Customers
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            Reports
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            Integrations
-          </a>
-        </li>
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">
+          Dashboard
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">
+          Orders
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          Products
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          Customers
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          Reports
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          Integrations
+        </a>
+      </li>
 
-      </ul>
+    </ul>
 
-      <h6 class="sidebar-heading px-3 mt-4">
-        <span>Saved reports</span>
-      </h6>
-      <ul class="nav flex-column">
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            Current month
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            Last quarter
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            Social engagement
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            Year-end sale
-          </a>
-        </li>
-      </ul>
+    <h6 class="sidebar-heading px-3 mt-4">
+      <span>Saved reports</span>
+    </h6>
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          Current month
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          Last quarter
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          Social engagement
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          Year-end sale
+        </a>
+      </li>
+    </ul>
   </nav>
 
   <main role="main" class="col-10 ml-auto">
-    <div class="">
-      <h1 class="">Dashboard</h1>
-      <div class="">
-        <div class="">
-          <button class="">Share</button>
-          <button class="">Export</button>
+    
+    <!--Titulo e Menu Dropdown -->
+    <div class="d-flex justify-content-between align-items-center mt-4">
+      <h1 class=h2>Dashboard</h1>
+      <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group mr-2" role="group" aria-label="First group">
+          <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+          <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
         </div>
-
-        <div class="">
-          <button class="" type="button">
+        <div class="dropdown">
+          <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             This week
           </button>
-          <div class="">
-            <a class="" href="#">last two weeks</a>
-            <a class="" href="#">last mounth</a>
-            <a class="" href="#">last three mounths</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">last two weeks</a>
+            <a class="dropdown-item" href="#">last mounth</a>
+            <a class="dropdown-item" href="#">last three mounths</a>
           </div>
         </div>
       </div>
